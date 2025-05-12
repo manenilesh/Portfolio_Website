@@ -275,7 +275,7 @@ body{
     position: absolute;
     top: 0;
     right: 30px;
-    width: 770px;
+    width: 865px;
     height: 100%;
     background: transparent;
     transition: 3s;
@@ -362,7 +362,7 @@ body{
 
 .projects {
     padding: 80px 10%;
-    background-color: #081b29; /* Match body background */
+    background-color: black; /* Match body background */
     color: #ededed;
     min-height: 100vh; /* Ensure full viewport height */
     text-align: center;
@@ -452,6 +452,65 @@ body{
     font-size: 20px;
 }
 
+.skills {
+    padding: 80px 10%;
+    background-color: black; /* Match body background */
+    color: #ededed;
+    min-height: 100vh; /* Ensure full viewport height */
+    text-align: center;
+}
+
+.skills h2.heading {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.skills h2.heading span {
+    color: #00abf0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.skills-box {
+    background-color: #112240;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-10px);
+}
+
+.skills-box i {
+    font-size: 50px;
+    color: #00abf0;
+    margin-bottom: 20px;
+}
+
+.skills-box h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ededed;
+    margin-bottom: 15px;
+}
+
+.skills-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ededed;
+    margin-bottom: 20px;
+}
 
 /* KEYFRAMES ANIMATION */
 
