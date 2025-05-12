@@ -35,3 +35,32 @@ The website includes the following sections:
 ## Project Structure
 
 The main files and folders in this repository are:
+
+├── index.html      # The main homepage of the portfolio
+├── about.html      # (If you created a separate about page)
+├── projects.html   # (If you created a separate projects page)
+├── skills.html     # (If you created a separate skills page)
+├── resume.html     # (If you created a separate resume page)
+├── hire-me.html    # (If you created a separate hire me page)
+├── style.css       # The main stylesheet for the website
+├── NileshMane_Resume.pdf # Your resume file (if included)
+├── home.jpg        # Background image for the home section
+├── about.jpg       # Background image for the about section
+├── pro1.gif        # GIF for project 1
+├── pro2.gif        # GIF for project 2
+├── pro3.gif        # GIF for project 3
+├── pro4.gif        # GIF for project 4
+├── pro5.gif        # GIF for project 5
+├── pro6.gif        # GIF for project 6
+└── ... (other assets like images might be here)
+
+
+## Customization
+
+You can customize this website by:
+
+- Editing the text content in the HTML files (`index.html`, `about.html`, etc.).
+- Modifying the styles in `style.css` to change the appearance.
+- Replacing the placeholder images (`home.jpg`, `about.jpg`, `pro1.gif`, etc.) with your own.
+- Updating the links to your social media profiles and resume file.
+- Adding more projects and skills sections as needed.
