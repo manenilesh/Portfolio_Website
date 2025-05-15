@@ -31,15 +31,15 @@
         <h3>DevOps Engineer</h3>
         <p>DevOps Engineer with experience in Linux system administration, CI/CD pipeline management (Jenkins, Git, GitHub), and infrastructure automation (Terraform, Ansible, Docker, Kubernetes). Skilled in scripting (Bash, Python, YAML) and cloud technologies (AWS).</p>
         <div class="btn-box">
-            <a href="#">Hire Me</a>
-            <a href="#">Let's Talk</a>
+            <a href="#contact" class="hire-me-btn">Hire Me</a>
+            <a href="#contact" class="let-s-talk-btn">Let's Talk</a>
         </div>
     </div>
 
     <div class="home-sci">
-        <a href="https://www.linkedin.com/in/nilesh-mane-profile/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         <a href=" https://www.instagram.com/nilesh__547/" target="_blank"><i class='bx bxl-instagram' ></i></a>
         <a href="https://wa.me/8830066547" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+        <a href="https://www.linkedin.com/in/nilesh-mane-profile/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         
     </div>
 
@@ -170,11 +170,92 @@
 </section>
 
 <section class="resume" id="resume">
-        <h2>My <span>Resume</span></h2>
-        <div class="resume-content">
-            <a href="NileshMane_Resume.pdf" class="btn">Download Resume</a>
-        </div>
-    </section>
+    <h2>My <span>Resume</span></h2>
+    <div class="resume-content">
+        <a href="NileshMane_Resume.pdf" class="btn">Download Resume</a>
+    </div>
+</section>
+<section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <form action="backend/contact_form.php" method="post">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <span class="icon"> <i class='bx bxs-user'></i></span>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <span class="icon"> <i class='bx bxs-envelope'></i></span>
+            </div>
+            <div class="input-box">
+                <input type="text" name="subject" placeholder="Subject">
+                <span class="icon"> <i class='bx bxs-edit'></i></span>
+            </div>
+            <div class="textarea-box">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="icon"> <i class='bx bxs-message-square-dots'></i></span>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+</section>     
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hireMeBtn = document.querySelector('.hire-me-btn');
+            const letsTalkBtn = document.querySelector('.let-s-talk-btn');
+            const contactSection = document.getElementById('contact');
+
+            if (hireMeBtn) {
+                hireMeBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+
+            if (letsTalkBtn) {
+                letsTalkBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+
+</section>
+
+    <!-- <div id="form-status" class="contact status-message">
+        <?php
+        if (isset($_GET['status'])) {
+            if ($_GET['status'] == 'success') {
+                echo "<p class='success'>Your message has been sent!</p>";
+            } elseif ($_GET['status'] == 'error') {
+                echo "<p class='error'>Oops! Something went wrong. Please try again later.</p>";
+            }
+        }
+        ?>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hireMeBtn = document.querySelector('.hire-me-btn');
+            const letsTalkBtn = document.querySelector('.let-s-talk-btn');
+            const contactSection = document.getElementById('contact');
+
+            if (hireMeBtn) {
+                hireMeBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+
+            if (letsTalkBtn) {
+                letsTalkBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        });
+    </script> -->
+
 
 </body>
 </html>
